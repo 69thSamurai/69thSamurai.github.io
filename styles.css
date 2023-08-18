@@ -1,0 +1,106 @@
+/* Reset default styles */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sahel', Arial, sans-serif;
+    background-color: #000;
+    color: #000;
+    direction: rtl;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #ff9933, #ff3300);
+    color: #000;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Main Section Styles */
+main {
+    display: flex;
+    flex-direction: column; /* Adjust for content alignment */
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 200px);
+    padding-top: 4rem; /* Adjust padding-top to control spacing */
+}
+
+/* Contact Cards Styles */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+    }
+
+    /* Adjust the positioning of main for small screens */
+    main {
+        padding-top: 10rem; /* Increase padding-top to create space */
+    }
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #ff9933, #ff3300);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    width: 100%; /* Adjust card width for medium screens */
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    color: #000;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(to bottom, #ffcc99, #ff9933);
+}
+
+.card-content i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #000;
+}
+
+.card-content p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+#hit-counter {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-icon {
+    font-size: 2rem;
+    color: #000;
+}
